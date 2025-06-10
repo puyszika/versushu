@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    z-index: 20;
+}
+
+.nav a {
+    color: black;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 5rem;
+    text-decoration: none;
+}
+
+span {
+    padding: 1rem 1rem;
+    color: white !important;
+}
+
+h1 {
+    color: black !important;
+    text-shadow: 4px 4px 2px rgba(113,113,113,0.4);
+}
+
+p {
+    color: black !important;
+    text-shadow: 2px 2px 3px rgba(113,113,113,0.4);
+}
+
+
+loginmiddle {
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 80%;
+    border-radius: 10px;
+    border: 5px solid #de3d11;
+}
+
+.hero-box {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 100, 0, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 100, 0, 0.4);
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-box h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #969696 !important;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
+}
+
+.hero-box h1 span {
+    color: #f97316;
+}
+
+.hero-box p {
+    font-size: 1.1rem;
+    color: #969696 !important;
+    line-height: 1.6;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+
+.hero-box .highlight {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
